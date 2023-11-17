@@ -1,7 +1,19 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import styled from "styled-components";
 import "./Cadastro.css";
+
+const Main = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  background-color: #9CBCCC;
+`;
+
+
 
 function Signup() {
   const [form, setForm] = useState({
@@ -47,79 +59,79 @@ function Signup() {
   };
 
   return (
-    <main className="Cadastro">
-    <Form onSubmit={handleSubmit}>
-      <Form.Group className="mb-3" controlId="formGroupEmail">
-        <Form.Label>Email</Form.Label>
-        <Form.Control
-          type="email"
-          placeholder="Enter email"
-          name="email"
-          value={form.email}
-          onChange={handleChange}
-        />
-      </Form.Group>
+    <Main>
+        <Form onSubmit={handleSubmit}>
+          <Form.Group className="mb-3" controlId="formGroupEmail">
+            <Form.Label>Email</Form.Label>
+            <Form.Control
+              type="email"
+              placeholder="Enter email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+            />
+          </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formGroupName">
-        <Form.Label>Name</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Enter name"
-          name="name"
-          value={form.name}
-          onChange={handleChange}
-        />
-      </Form.Group>
+          <Form.Group className="mb-3" controlId="formGroupName">
+            <Form.Label>Name</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Enter name"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+            />
+          </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formGroupPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control
-          type="password"
-          placeholder="Password"
-          name="password"
-          value={form.password}
-          onChange={handleChange}
-        />
-      </Form.Group>
+          <Form.Group className="mb-3" controlId="formGroupPassword">
+            <Form.Label>Password</Form.Label>
+            <Form.Control
+              type="password"
+              placeholder="Password"
+              name="password"
+              value={form.password}
+              onChange={handleChange}
+            />
+          </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formGroupPhone">
-        <Form.Label>Phone</Form.Label>
-        <Form.Control
-          type="tel"
-          placeholder="Enter phone number"
-          name="phone"
-          value={form.phone}
-          onChange={handleChange}
-        />
-      </Form.Group>
+          <Form.Group className="mb-3" controlId="formGroupPhone">
+            <Form.Label>Phone</Form.Label>
+            <Form.Control
+              type="tel"
+              placeholder="Enter phone number"
+              name="phone"
+              value={form.phone}
+              onChange={handleChange}
+            />
+          </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formGroupPostalCode">
-        <Form.Label>Postal Code</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Enter postal code"
-          name="postalCode"
-          value={form.postalCode}
-          onChange={handleChange}
-        />
-      </Form.Group>
+          <Form.Group className="mb-3" controlId="formGroupPostalCode">
+            <Form.Label>Postal Code</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Enter postal code"
+              name="postalCode"
+              value={form.postalCode}
+              onChange={handleChange}
+            />
+          </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formGroupAddress">
-        <Form.Label>Address</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Enter address"
-          name="address"
-          value={form.address}
-          onChange={handleChange}
-        />
-      </Form.Group>
+          <Form.Group className="mb-3" controlId="formGroupAddress">
+            <Form.Label>Address</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Enter address"
+              name="address"
+              value={form.address}
+              onChange={handleChange}
+            />
+          </Form.Group>
 
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>
-    </main>
+          <Button className="botao" variant="primary" type="submit">
+            Submit
+          </Button>
+        </Form>
+    </Main>
   );
 }
 
