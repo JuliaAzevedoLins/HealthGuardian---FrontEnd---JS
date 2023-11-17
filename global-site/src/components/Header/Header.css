@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+.Header {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: #EEEEEE;
+  color: #000000;
+}
+
+.Titulo {
+  font-size: 30px;
+  font-family: "Megrim", "cursive";
+  color: #000000;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}/*# sourceMappingURL=Header.css.map */
