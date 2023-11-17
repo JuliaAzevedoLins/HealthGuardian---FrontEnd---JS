@@ -1,5 +1,31 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
+import styled from 'styled-components';
+
+const Main = styled.div`
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #9CBCCC;
+`;
+
+const Login_ = styled.div`
+  margin-top : 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+`;
+
+const Frase_inicial = styled.div`
+  padding-top: 7%;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+
+`;
+
 
 function Login() {
   const [form, setForm] = useState({ email: '', password: '' });
@@ -29,7 +55,11 @@ function Login() {
   }
 
   return (
-    <Form onSubmit={handleSubmit}>
+
+    <Main>
+    <Frase_inicial className='Frase_inicial'>De volta ao Health Guardian!</Frase_inicial>
+    <Login_>
+    <Form onSubmit={handleSubmit} style={{width:"30%"}}>
       <Form.Group className="mb-3" controlId="formGroupEmail">
         <Form.Label>E-mail</Form.Label>
         <Form.Control type="email" placeholder="Digite seu email" name="email" value={form.email} onChange={handleChange} />
@@ -38,8 +68,10 @@ function Login() {
         <Form.Label>Senha</Form.Label>
         <Form.Control type="password" placeholder="Digite sua senha" name="password" value={form.password} onChange={handleChange} />
       </Form.Group>
-      <Form.Control type="submit" value="Submit" />
+      <Form.Control className="botao" type="submit" value="Submit"  style={{margin:"0 auto", width:"50%"}}/>
     </Form>
+    </Login_>
+    </Main>
   );
 }
 

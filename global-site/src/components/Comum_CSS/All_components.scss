@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Poppins:wght@400;600&display=swap');
+
+$cor1_header_footer : #EEEEEE;
+$cor2_header_footer : #000000;
+$fonte_principal : 'Megrim', 'cursive';
+$fonte_subtitulo : 'Poppins', sans-serif;
+$font_stroke: 'popins', sans-serif;
+$cor-primaria: #DFB162;
+$Cor-de-fundo2: #9CBCCC;
+$Cor-de-fundo3: #D4D2E3;
+$cor-texto-card: #5397C5;
+$cor-titulo-card: #053944;
+
+//Cabecalho-----------------------------------------------------------------
+
+.Cabecalho{
+  display: flex;
+  height: 100px;
+  align-items: center;
+  background-color: $cor1_header_footer;
+  color: $cor2_header_footer;
+  justify-content: space-between;
+}
+
+.Links{
+  display: flex;
+  gap: 5%;
+  margin-right: 8%;
+}
+
+.Links a {
+  text-decoration: none;
+  color: $cor2_header_footer;
+  font-size: 15px;
+  font-family: $fonte_subtitulo;
+
+}
+
+.Links a:hover {
+  color: $cor-primaria;
+  font-size: 15px;
+  font-family: $fonte_subtitulo;
+}
+
+
+.Marca_logo{
+  display: flex;
+  align-items: center;
+}
+
+.Marca{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.HealthGuardian{
+  font-size: 30px;
+  font-family: $fonte_principal;
+  color: $cor2_header_footer;
+}
+
+.Deslogar{
+  margin-right: 1%;
+  width: 10%;
+  height: 30%;
+  background-color: #DFB162;
+  border-radius: 5px;
+  border: none;
+}
+
+
+
+//Header-----------------------------------------------------------------
+
+.Header {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: $cor1_header_footer;
+  color: $cor2_header_footer;
+}
+
+.Titulo {
+  font-size: 30px;
+  font-family: $fonte_principal;
+  color: $cor2_header_footer;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+
+//Footer-----------------------------------------------------------------
+
+
+.Footer_{
+  background-color: $cor1_header_footer;
+  color: $cor1_header_footer;
+  display: flex;
+  gap: 70%;
+}
+
+.Titulos_footer{
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+
+.Titulo_footer{
+  font-size: 30px;
+  font-family: $fonte_principal;
+  color: $cor2_header_footer;
+}
+
+.Subtitulo_footer{
+  font-size: 20px;
+  font-family: $fonte_subtitulo;
+  color: $cor2_header_footer;
+}
+
+.imagens{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $cor1_header_footer;
+  color: $cor2_header_footer;
+  height: 50px;
+}
+
+
+//Pagina de Cadastro -----------------------------------------------------
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DFB162;
+    border-color: #DFB162;
+    text-align: center;
+  }
+
+  .botao:hover {
+    background-color: #806e0c;
+    border-color: #806e0c;
+    text-align: center;
+  }
+
+//HealthGuardians----------------------------------------------------------
+
+.ParteUm{
+  display: flex;
+  background-color: $cor1_header_footer;
+  gap: 10%;
+  height: 100vh;
+}
+
+.Gif{
+  margin-left:  5%;
+  height: 600px;
+  width: 600px;
+}
+
+.Titulo_HealthGuardian{
+  font-size: 50px;
+  font-family: $fonte_subtitulo;
+  font-weight: 1000;
+  color: $cor-titulo-card;
+  margin-top: 10%;
+}
+
+.Subtitulo_HealthGuardian{
+  font-size: 30px;
+  font-family: $fonte_subtitulo;
+  color: $cor2_header_footer;
+  margin-bottom: 10%;
+}
+
+.Texto_HealthGuardian{
+  font-size: 20px;
+  width: 80%;
+  font-family: $fonte_subtitulo;
+  color: $cor2_header_footer;
+  margin-bottom: 10%;
+}
+
+
+//Health Guardian Cards--------------------------------------------------------------------------------
+
+.Tudo{
+  background-image: url('../HealthGuardian/Fundo_flores.png');
+  background-size: cover;
+}
+
+
+.funcionamento{
+  font-weight: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $cor1_header_footer;
+  height: 100px;
+  font-size: 40px;
+  font-family: $fonte_subtitulo;
+}
+
+.Cards{
+  display: flex;
+  border-radius:10px;
+  gap: 5%;
+  padding: 5%;
+}
+
+.Card{
+  padding: 2%;
+  background-color: $cor1_header_footer;
+  border-radius: 15px;
+  height: 400px;
+  width: 320px;
+  // justify-content: center;
+  // align-items: center;
+  // text-align: center
+  
+  ;
+}
+
+.CardTitulo{
+  font-size: 20px;
+  font-family: $fonte_subtitulo;
+  color: $cor-titulo-card;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.CardTexto{
+  font-size: 15px;
+  font-family: $fonte_subtitulo;
+  color: $cor2_header_footer;
+  margin-top: 20%;
+  color: $cor2_header_footer;
+  
+}
+
