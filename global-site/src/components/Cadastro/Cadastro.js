@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import styled from "styled-components";
-import "./Cadastro.css";
+import "../Comum_CSS/Cadastro.css";
 
 const Main = styled.div`
   display: flex;
@@ -68,7 +68,7 @@ function Signup() {
 
   return (
     <Main>
-        <Form onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit} style={{width:"30%"}}>
           <Form.Group className="mb-3" controlId="formGroupEmail">
             <Form.Label>Email</Form.Label>
             <Form.Control
@@ -137,7 +137,7 @@ function Signup() {
 
           {error && <p style={{ color: 'red' }}>{error}</p>}
 
-          <Button className="botao" variant="primary" type="submit">
+          <Button className="botao" variant="primary" type="submit" style={{margin:"0 auto", width:"50%"}}>
             Submit
           </Button>
         </Form>
