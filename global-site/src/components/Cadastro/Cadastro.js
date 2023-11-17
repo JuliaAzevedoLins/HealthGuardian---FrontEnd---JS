@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import "./Cadastro.css";
 
 function Signup() {
   const [form, setForm] = useState({
@@ -46,6 +47,7 @@ function Signup() {
   };
 
   return (
+    <main className="Cadastro">
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formGroupEmail">
         <Form.Label>Email</Form.Label>
@@ -117,6 +119,7 @@ function Signup() {
         Submit
       </Button>
     </Form>
+    </main>
   );
 }
 
