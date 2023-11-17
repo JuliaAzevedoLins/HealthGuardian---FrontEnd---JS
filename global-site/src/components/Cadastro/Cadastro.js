@@ -29,8 +29,15 @@ function Signup() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  const [error, setError] = useState(null);
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!form.name || !form.password || !form.phone || !form.postalCode || !form.address) {
+      setError('Por favor, preencha todos os campos');
+      return;
+    }
 
     fetch(
       "https://healthguardian-e9b30-default-rtdb.firebaseio.com/DadosClientes.json",
@@ -52,6 +59,7 @@ function Signup() {
       .then((response) => response.json())
       .then((data) => {
         console.log("Success:", data);
+        setError(null); // Clear the error message on successful submission
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -126,6 +134,8 @@ function Signup() {
               onChange={handleChange}
             />
           </Form.Group>
+
+          {error && <p style={{ color: 'red' }}>{error}</p>}
 
           <Button className="botao" variant="primary" type="submit">
             Submit
