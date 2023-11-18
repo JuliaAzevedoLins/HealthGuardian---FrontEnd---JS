@@ -61,29 +61,6 @@ $cor-titulo-card: #053944;
 }
 
 
-//Header-----------------------------------------------------------------
-
-.Header {
-  display: flex;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-  background-color: $cor1_header_footer;
-  color: $cor2_header_footer;
-}
-
-.Titulo {
-  font-size: 30px;
-  font-family: $fonte_principal;
-  color: $cor2_header_footer;
-}
-
-.logo {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
-
 
 //Footer-----------------------------------------------------------------
 
@@ -93,6 +70,13 @@ $cor-titulo-card: #053944;
   color: $cor1_header_footer;
   display: flex;
   gap: 70%;
+
+  @media (min-width: 300px) and (max-width: 600px){
+    gap: 40%;
+    width: 100vw;
+    height: 15 vh;
+    display: space-between;
+  }
 }
 
 .Titulos_footer{
@@ -117,6 +101,11 @@ $cor-titulo-card: #053944;
   justify-content: center;
   align-items: center;
   display: flex;
+  @media (min-width: 300px) and (max-width: 600px){
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+  }
 }
 
 .Copyright{
@@ -127,6 +116,7 @@ $cor-titulo-card: #053944;
   color: $cor2_header_footer;
   height: 50px;
 }
+
 
 
 //Pagina de Cadastro -----------------------------------------------------

@@ -9,6 +9,7 @@ const Main = styled.div`
   height: 100vh;
   width: 100vw;
   background-color: #9CBCCC;
+  
 `;
 
 const Login_ = styled.div`

@@ -44,41 +44,19 @@
   color: #000000;
 }
 
-.Deslogar {
-  margin-right: 1%;
-  width: 10%;
-  height: 30%;
-  background-color: #DFB162;
-  border-radius: 5px;
-  border: none;
-}
-
-.Header {
-  display: flex;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-  background-color: #EEEEEE;
-  color: #000000;
-}
-
-.Titulo {
-  font-size: 30px;
-  font-family: "Megrim", "cursive";
-  color: #000000;
-}
-
-.logo {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
-
 .Footer_ {
   background-color: #EEEEEE;
   color: #EEEEEE;
   display: flex;
   gap: 70%;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .Footer_ {
+    gap: 40%;
+    width: 100vw;
+    height: 15 vh;
+    display: space-between;
+  }
 }
 
 .Titulos_footer {
@@ -103,6 +81,13 @@
   justify-content: center;
   align-items: center;
   display: flex;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .imagens {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+  }
 }
 
 .Copyright {
