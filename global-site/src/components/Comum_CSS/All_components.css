@@ -135,11 +135,27 @@
   gap: 10%;
   height: 100vh;
 }
+@media (min-width: 300px) and (max-width: 425px) {
+  .ParteUm {
+    flex-direction: column;
+    gap: 0%;
+    height: 80vh;
+  }
+}
 
 .Gif {
-  margin-left: 5%;
-  height: 600px;
-  width: 600px;
+  height: 400px;
+  width: 400px;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  .Gif {
+    margin-left: 5%;
+    margin-top: 10%;
+    height: 90%;
+    width: 90%;
+  }
 }
 
 .Titulo_HealthGuardian {
@@ -149,12 +165,27 @@
   color: #053944;
   margin-top: 10%;
 }
+@media (min-width: 300px) and (max-width: 425px) {
+  .Titulo_HealthGuardian {
+    font-size: 20px;
+    margin: 5%;
+  }
+}
 
 .Subtitulo_HealthGuardian {
   font-size: 30px;
   font-family: "Poppins", sans-serif;
   color: #000000;
   margin-bottom: 10%;
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  .Subtitulo_HealthGuardian {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 5%;
+  }
 }
 
 .Texto_HealthGuardian {
@@ -164,10 +195,25 @@
   color: #000000;
   margin-bottom: 10%;
 }
+@media (min-width: 300px) and (max-width: 425px) {
+  .Texto_HealthGuardian {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 5%;
+  }
+}
 
 .Tudo {
   background-image: url("../HealthGuardian/Fundo_flores.png");
   background-size: cover;
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  .Tudo {
+    flex-direction: column;
+    height: 100vh;
+  }
 }
 
 .funcionamento {
@@ -180,12 +226,27 @@
   font-size: 40px;
   font-family: "Poppins", sans-serif;
 }
+@media (min-width: 300px) and (max-width: 425px) {
+  .funcionamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30%;
+    margin-right: 15%;
+  }
+}
 
 .Cards {
   display: flex;
   border-radius: 10px;
   gap: 5%;
   padding: 5%;
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  .Cards {
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .Card {
@@ -194,6 +255,16 @@
   border-radius: 15px;
   height: 400px;
   width: 320px;
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  .Card {
+    margin-left: 9%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+  }
 }
 
 .CardTitulo {
@@ -211,4 +282,106 @@
   color: #000000;
   margin-top: 20%;
   color: #000000;
+}
+
+.ParteTres {
+  display: flex;
+  background-color: #EEEEEE;
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  .ParteTres {
+    flex-direction: column;
+    gap: 0%;
+    height: 55%;
+  }
+}
+
+.Texto_ParteTres {
+  margin-left: 5%;
+  display: flex;
+  font-size: 50px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: #053944;
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  .Texto_ParteTres {
+    width: 70%;
+    font-size: 30%;
+    margin-top: 10%;
+  }
+}
+
+.Mocap {
+  margin-top: 5%;
+  height: 700px;
+  width: 700px;
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  .Mocap {
+    margin-left: 5%;
+    margin-top: 10%;
+    height: 90%;
+    width: 90%;
+  }
+}
+
+.ParteQuatro {
+  display: flex;
+  background-color: #9CBCCC;
+  gap: 10%;
+  height: 100vh;
+  justify-content: center;
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  .ParteQuatro {
+    width: 100%;
+  }
+}
+
+.Main_ParteQuatro {
+  margin-top: 10%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  background-color: #053944;
+  border-radius: 15px;
+  height: 50%;
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  .Main_ParteQuatro {
+    flex-direction: column;
+    height: 80%;
+  }
+}
+
+.TituloParteQuatro {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  color: #EEEEEE;
+  margin-left: 5%;
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  .TituloParteQuatro {
+    margin-top: 10%;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.Topicos_ParteQuatro {
+  margin-right: 2%;
+  display: flex;
+  color: #EEEEEE;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  .Topicos_ParteQuatro {
+    flex-direction: column;
+    margin-top: 10%;
+  }
 }/*# sourceMappingURL=All_components.css.map */
