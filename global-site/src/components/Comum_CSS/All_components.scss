@@ -181,8 +181,8 @@ $cor-titulo-card: #053944;
   @media (min-width: 300px) and (max-width: 425px){
     margin-left: 5%;
     margin-top: 10%;  
-    height: 90%;
-    width: 90%;
+    height: 250px;
+    width: 250px;
   }
 
 }
@@ -237,7 +237,7 @@ $cor-titulo-card: #053944;
   background-size: cover;
   @media (min-width: 300px) and (max-width: 425px){
     flex-direction: column;
-    height: 100vh;
+    height: 150vh;
   } 
 }
 
@@ -256,7 +256,7 @@ $cor-titulo-card: #053944;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30%;
+    font-size: 30px;
     margin-right: 15%;
   } 
 }
@@ -267,6 +267,7 @@ $cor-titulo-card: #053944;
   gap: 5%;
   padding: 5%;
   @media (min-width: 300px) and (max-width: 425px){
+    margin-left: 10%;
     flex-direction: column;
     justify-content: space-between;
   } 
@@ -285,6 +286,7 @@ $cor-titulo-card: #053944;
     align-items: center;
     justify-content: center;
     width: 65%;
+    height: 100%;
   } 
 }
 
@@ -328,8 +330,10 @@ $cor-titulo-card: #053944;
   font-family: $fonte_subtitulo;
   color: $cor-titulo-card;
   @media (min-width: 300px) and (max-width: 425px){
+    justify-content: center;
+    align-items: center;
     width: 70%;
-    font-size: 30%;
+    font-size: 30px;
     margin-top: 10%;
   }
 }
@@ -339,10 +343,10 @@ $cor-titulo-card: #053944;
   height: 700px;
   width: 700px;
   @media (min-width: 300px) and (max-width: 425px){
-    margin-left: 5%;
+    margin-left: 20%;
     margin-top: 10%;  
-    height: 90%;
-    width: 90%;
+    height: 250px;
+    width: 250PX;
   }
 }
 

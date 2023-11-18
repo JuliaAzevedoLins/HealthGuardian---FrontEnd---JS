@@ -153,8 +153,8 @@
   .Gif {
     margin-left: 5%;
     margin-top: 10%;
-    height: 90%;
-    width: 90%;
+    height: 250px;
+    width: 250px;
   }
 }
 
@@ -212,7 +212,7 @@
 @media (min-width: 300px) and (max-width: 425px) {
   .Tudo {
     flex-direction: column;
-    height: 100vh;
+    height: 150vh;
   }
 }
 
@@ -231,7 +231,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30%;
+    font-size: 30px;
     margin-right: 15%;
   }
 }
@@ -244,6 +244,7 @@
 }
 @media (min-width: 300px) and (max-width: 425px) {
   .Cards {
+    margin-left: 10%;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -264,6 +265,7 @@
     align-items: center;
     justify-content: center;
     width: 65%;
+    height: 100%;
   }
 }
 
@@ -308,8 +310,10 @@
 }
 @media (min-width: 300px) and (max-width: 425px) {
   .Texto_ParteTres {
+    justify-content: center;
+    align-items: center;
     width: 70%;
-    font-size: 30%;
+    font-size: 30px;
     margin-top: 10%;
   }
 }
@@ -321,10 +325,10 @@
 }
 @media (min-width: 300px) and (max-width: 425px) {
   .Mocap {
-    margin-left: 5%;
+    margin-left: 20%;
     margin-top: 10%;
-    height: 90%;
-    width: 90%;
+    height: 250px;
+    width: 250PX;
   }
 }
 

@@ -10,7 +10,7 @@ import Cabecalho from './components/Cabecalho/Cabecalho';
 function App() {
   return (
    <div>
-      <HealthGuardian />
+      <Cadastro/>
    </div>
   );
 }
