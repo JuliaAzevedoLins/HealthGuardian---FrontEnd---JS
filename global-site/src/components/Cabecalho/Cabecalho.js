@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from './logo.png'; 
+import { Link } from 'react-router-dom';
 
 function Cabecalho() {
   return (
@@ -9,10 +10,10 @@ function Cabecalho() {
         <h1 className='HealthGuardian'>Health Guardian</h1>  
     </div>
       <div className='Links'>
-        <a href="#" className='Pagina_HealthGuardian'>HealthGuardian</a>  
-        <a href="#">Criadores</a>
+      <Link to="/HealthGuardian">HealthGuardian</Link>  
+      <Link to="/Login">Cria</Link>  
       </div>  
-      <button className='Deslogar'>Deslogar</button>
+      <Link className='Deslogar' to="/Login">Deslogar</Link>  
    </div>
   );
 }
