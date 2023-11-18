@@ -21,6 +21,12 @@ function Cabecalho() {
     &:hover {
       background-color: #a37b2b; 
     }
+
+    @media (min-width: 300px) and (max-width: 800px){
+      width: 15%;
+      height: 50%;
+      margin-right: 1%;
+    }
   }
   `;
 

@@ -20,6 +20,12 @@ $cor-titulo-card: #053944;
   background-color: $cor1_header_footer;
   color: $cor2_header_footer;
   justify-content: space-between;
+
+  @media (min-width: 300px) and (max-width: 800px){
+    width: 100vw;
+    height: 5vh;
+    display: space-between;
+  }
 }
 
 .Links{
@@ -33,6 +39,11 @@ $cor-titulo-card: #053944;
   color: $cor2_header_footer;
   font-size: 15px;
   font-family: $fonte_subtitulo;
+  @media (min-width: 300px) and (max-width: 800px){
+    flex-direction: column;
+    
+
+  }
 
 }
 
@@ -58,6 +69,11 @@ $cor-titulo-card: #053944;
   font-size: 30px;
   font-family: $fonte_principal;
   color: $cor2_header_footer;
+  @media (min-width: 300px) and (max-width: 800px){
+      display: none;
+
+  }
+
 }
 
 
@@ -71,10 +87,10 @@ $cor-titulo-card: #053944;
   display: flex;
   gap: 70%;
 
-  @media (min-width: 300px) and (max-width: 600px){
+  @media (min-width: 300px) and (max-width: 800px){
     gap: 40%;
     width: 100vw;
-    height: 15 vh;
+    height: 20vh;
     display: space-between;
   }
 }
@@ -101,7 +117,7 @@ $cor-titulo-card: #053944;
   justify-content: center;
   align-items: center;
   display: flex;
-  @media (min-width: 300px) and (max-width: 600px){
+  @media (min-width: 300px) and (max-width: 800px){
     display: flex;
     flex-direction: column;
     margin-bottom: 3vh;
@@ -146,10 +162,12 @@ $cor-titulo-card: #053944;
   background-color: $cor1_header_footer;
   gap: 10%;
   height: 100vh;
-  @media (min-width: 300px) and (max-width: 425px){
+  @media (min-width: 340px) and (max-width: 800px){
     flex-direction: column;
     gap: 0%;
     height: 80vh;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -158,11 +176,12 @@ $cor-titulo-card: #053944;
   width: 400px;
   margin-top: 10%;
   margin-left: 10%;
-  @media (min-width: 300px) and (max-width: 425px){
+  @media (min-width: 340px) and (max-width: 800px){
     margin-left: 5%;
     margin-top: 10%;  
-    height: 250px;
-    width: 250px;
+    height: 310px;
+    width: 310px;
+
   }
 
 }
@@ -173,7 +192,7 @@ $cor-titulo-card: #053944;
   font-weight: 1000;
   color: $cor-titulo-card;
   margin-top: 10%;
-  @media (min-width: 300px) and (max-width: 425px){
+  @media (min-width: 340px) and (max-width: 800px){
     font-size: 20px;
     margin: 5%;
   }
@@ -184,7 +203,7 @@ $cor-titulo-card: #053944;
   font-family: $fonte_subtitulo;
   color: $cor2_header_footer;
   margin-bottom: 10%;
-  @media (min-width: 300px) and (max-width: 425px){
+  @media (min-width: 340px) and (max-width: 800px){
     width: 90%;
     justify-content: center;
     align-items: center;
@@ -199,7 +218,7 @@ $cor-titulo-card: #053944;
   font-family: $fonte_subtitulo;
   color: $cor2_header_footer;
   margin-bottom: 10%;
-  @media (min-width: 300px) and (max-width: 425px){
+  @media (min-width: 340px) and (max-width: 800px){
     width: 90%;
     justify-content: center;
     align-items: center;
@@ -215,7 +234,7 @@ $cor-titulo-card: #053944;
 .Tudo{
   background-image: url('../HealthGuardian/Fundo_flores.png');
   background-size: cover;
-  @media (min-width: 300px) and (max-width: 425px){
+  @media (min-width: 340px) and (max-width: 800px){
     flex-direction: column;
     height: 150vh;
   } 
@@ -232,7 +251,7 @@ $cor-titulo-card: #053944;
   font-size: 40px;
   font-family: $fonte_subtitulo;
 
-  @media (min-width: 300px) and (max-width: 425px){
+  @media (min-width: 340px) and (max-width: 800px){
     display: flex;
     align-items: center;
     justify-content: center;
@@ -246,7 +265,7 @@ $cor-titulo-card: #053944;
   border-radius:10px;
   gap: 5%;
   padding: 5%;
-  @media (min-width: 300px) and (max-width: 425px){
+  @media (min-width: 340px) and (max-width: 800px){
     margin-left: 10%;
     flex-direction: column;
     justify-content: space-between;
@@ -259,7 +278,7 @@ $cor-titulo-card: #053944;
   border-radius: 15px;
   height: 400px;
   width: 320px;
-  @media (min-width: 300px) and (max-width: 425px){
+  @media (min-width: 340px) and (max-width: 800px){
     margin-left: 9%;
     flex-direction: column;
     justify-content: space-between;
@@ -293,10 +312,12 @@ $cor-titulo-card: #053944;
 .ParteTres{
   display: flex;
   background-color: $cor1_header_footer;
-  @media (min-width: 300px) and (max-width: 425px){
+  @media (min-width: 340px) and (max-width: 800px){
     flex-direction: column;
     gap: 0%;
-    height: 55%;
+    height: 55vh;
+    justify-content: center;
+    align-items: center;
   } 
 }
 
@@ -309,12 +330,11 @@ $cor-titulo-card: #053944;
   align-items: center;
   font-family: $fonte_subtitulo;
   color: $cor-titulo-card;
-  @media (min-width: 300px) and (max-width: 425px){
+  @media (min-width: 340px) and (max-width: 800px){
     justify-content: center;
     align-items: center;
     width: 70%;
     font-size: 30px;
-    margin-top: 10%;
   }
 }
 
@@ -322,11 +342,9 @@ $cor-titulo-card: #053944;
   margin-top: 5%;
   height: 700px;
   width: 700px;
-  @media (min-width: 300px) and (max-width: 425px){
-    margin-left: 20%;
-    margin-top: 10%;  
-    height: 250px;
-    width: 250PX;
+  @media (min-width: 340px) and (max-width: 800px){
+    height: 260px;
+    width: 260px;
   }
 }
 
@@ -338,7 +356,7 @@ $cor-titulo-card: #053944;
   gap: 10%;
   height: 100vh;
   justify-content: center;
-  @media (min-width: 300px) and (max-width: 425px){
+  @media (min-width: 340px) and (max-width: 800px){
     width: 100%;
   }
 }
@@ -351,7 +369,7 @@ $cor-titulo-card: #053944;
   background-color: $cor-titulo-card;
   border-radius: 15px;
   height: 50%;
-  @media (min-width: 300px) and (max-width: 425px){
+  @media (min-width: 340px) and (max-width: 800px){
     flex-direction: column;
     height: 80%;
   }
@@ -362,7 +380,7 @@ $cor-titulo-card: #053944;
   font-family: $fonte_subtitulo;
   color: $cor1_header_footer;
   margin-left: 5%;
-  @media (min-width: 300px) and (max-width: 425px){
+  @media (min-width: 340px) and (max-width: 800px){
     margin-top: 10%;
     flex-direction: column;
     justify-content: center;
@@ -377,7 +395,7 @@ $cor-titulo-card: #053944;
   justify-content: center;
   align-items: center;
   text-align: center;
-  @media (min-width: 300px) and (max-width: 425px){
+  @media (min-width: 340px) and (max-width: 800px){
     flex-direction: column;
     margin-top: 10%;;
   }

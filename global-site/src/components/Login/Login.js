@@ -9,6 +9,11 @@ const Main = styled.div`
   height: 100vh;
   width: 100vw;
   background-color: #9CBCCC;
+  @media (min-width: 300px) and (max-width: 800px){
+    width: 100vw;
+    height: 70vh;
+    display: space-between;
+  }
   
 `;
 
