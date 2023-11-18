@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import styled from 'styled-components';
 
@@ -27,33 +28,30 @@ const Frase_inicial = styled.div`
 `;
 
 
-function Login() {
+function Login({ onLogin }) {
   const [form, setForm] = useState({ email: '', password: '' });
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     fetch('https://healthguardian-e9b30-default-rtdb.firebaseio.com/DadosClientes.json')
     .then(response => response.json())
     .then(data => {
-      console.log(data);
       const dataArray = Object.values(data);
       for (let i = 0; i < dataArray.length; i++) {
-        console.log(dataArray[i].Email);
         if (dataArray[i].Email === form.email) {
           if (dataArray[i].Senha === form.password) {
             console.log("Senha correta");
-            return // colocar aqui o que caraios vao quere faze quando a senha estiver correta
-            window.location("ssasas")
+            onLogin();
+            navigate('/HealthGuardian');
           }
         }
       }
     });
   }
-
   return (
 
     <Main>
@@ -76,3 +74,4 @@ function Login() {
 }
 
 export default Login;
+
